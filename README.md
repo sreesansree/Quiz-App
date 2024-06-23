@@ -52,7 +52,7 @@ This project is a RESTful API backend for an online quiz application. It allows 
 You can use Postman or Insomnia to test the API endpoints. Below are the available endpoints and their usage.
 
 ## API Endpoints  
-## Authentication 
+## Authentication :
      - Register : 
          -  POST /api/auth/register
           - Body: { "username": "example", "password": "password" }
@@ -60,14 +60,14 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
        - POST /api/auth/login
        - Body: { "username": "example", "password": "password" }
  ## Quizzes : 
-   -  Create Quiz :
+    - Create Quiz :
        - POST /api/quizzes
        - Headers: { "Authorization": "Bearer <token>" }
        -  Body :
        {
-  "title": "Math Quiz",
-  "description": "Test your basic math skills",
-  "questions": [
+     "title": "Math Quiz",
+     "description": "Test your basic math skills",
+     "questions": [
     {
       "question": "What is 2 + 2?",
       "options": ["3", "4", "5", "6"],
@@ -80,26 +80,23 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
       "correctAnswer": "15",
       "marks": 10
     }
-  ],
-  "totalMarks": 15
-}
-
-- Get All Quizzes :
-     -  GET /api/quizzes
-     -  Headers: { "Authorization": "Bearer <token>" }
-      
-- Get Quiz by ID : 
+    ],
+    "totalMarks": 15
+    }
+    - Get All Quizzes :
+      -  GET /api/quizzes
+     -  Headers: { "Authorization": "Bearer <token>" }  
+    - Get Quiz by ID : 
       - GET /api/quizzes/:id
       - Headers: { "Authorization": "Bearer <token>" }
-
-- Update Quiz :
-      - PUT /api/quizzes/:id
+    - Update Quiz :
+       - PUT /api/quizzes/:id
       - Headers: { "Authorization": "Bearer <token>" }
       - Body :
        {
-  "title": "Updated Math Quiz",
-  "description": "Test your basic math skills with updated questions",
-  "questions": [
+    "title": "Updated Math Quiz",
+    "description": "Test your basic math skills with updated questions",
+    "questions": [
     {
       "question": "What is 2 + 3?",
       "options": ["4", "5", "6", "7"],
@@ -112,27 +109,26 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
       "correctAnswer": "21",
       "marks": 10
     }
-  ],
-  "totalMarks": 15
-}
-
-- Delete Quiz :
-   - DELETE /api/quizzes/:id
-   - Headers: { "Authorization": "Bearer <token>" }
+    ],
+    "totalMarks": 15
+    }
+    - Delete Quiz :
+     - DELETE /api/quizzes/:id
+     - Headers: { "Authorization": "Bearer <token>" }
 
 
 ## Submissions
- - Submit Quiz:
-  - POST /api/quizzes/:id/submit
-  - Headers: { "Authorization": "Bearer <token>" }
-  - Body : 
-{
-  "answers": ["4", "15"]
-}
--Response : {
-  "score": 15,
-  "totalMarks": 15,
-  "feedback": [
+    - Submit Quiz:
+       - POST /api/quizzes/:id/submit
+       - Headers: { "Authorization": "Bearer <token>" }
+       - Body : 
+          {
+          "answers": ["4", "15"]
+          }
+     -Response : {
+       "score": 15,
+       "totalMarks": 15,
+       "feedback": [
     {
       "question": "What is 2 + 2?",
       "correctAnswer": "4",
@@ -145,8 +141,8 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
       "userAnswer": "15",
       "isCorrect": true
     }
-  ]
-}
+     ] 
+    }
 
 
 
