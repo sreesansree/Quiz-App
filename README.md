@@ -12,8 +12,6 @@ This project is a RESTful API backend for an online quiz application. It allows 
 - [Database Schema](#database-schema)
 - [Authentication](#authentication)
 - [Business Logic](#business-logic)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -144,5 +142,10 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
      ] 
     }
 
+##Authentication 
+The API uses JWT for authentication. Users need to register and log in to receive a token. This token must be included in the Authorization header for all protected routes.
+
+##Business Logic
+The business logic for calculating quiz scores and providing feedback is implemented in the submitQuiz controller.
 
 
