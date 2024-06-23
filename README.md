@@ -118,10 +118,12 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
     - Submit Quiz:
        - POST /api/quizzes/:id/submit
        - Headers: { "Authorization": "Bearer <token>" }
+      
        - Body : 
           {
           "answers": ["4", "15"]
           }
+          
      -Response : {
        "score": 15,
        "totalMarks": 15,
