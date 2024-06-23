@@ -51,16 +51,16 @@ This project is a RESTful API backend for an online quiz application. It allows 
 ## Usage 
 You can use Postman or Insomnia to test the API endpoints. Below are the available endpoints and their usage.
 
-API Endpoints  : 
-Authentication :
-      Register : 
-         - POST /api/auth/register
+## API Endpoints  
+## Authentication 
+     - Register : 
+         -  POST /api/auth/register
           - Body: { "username": "example", "password": "password" }
-      Login : 
+     - Login : 
        - POST /api/auth/login
        - Body: { "username": "example", "password": "password" }
-  Quizzes : 
-     Create Quiz :
+ ## Quizzes : 
+   -  Create Quiz :
        - POST /api/quizzes
        - Headers: { "Authorization": "Bearer <token>" }
        -  Body :
@@ -84,18 +84,18 @@ Authentication :
   "totalMarks": 15
 }
 
-Get All Quizzes
-       GET /api/quizzes
-      Headers: { "Authorization": "Bearer <token>" }
+- Get All Quizzes :
+     -  GET /api/quizzes
+     -  Headers: { "Authorization": "Bearer <token>" }
       
-Get Quiz by ID 
-       GET /api/quizzes/:id
-       Headers: { "Authorization": "Bearer <token>" }
+- Get Quiz by ID : 
+      - GET /api/quizzes/:id
+      - Headers: { "Authorization": "Bearer <token>" }
 
-Update Quiz
-       PUT /api/quizzes/:id
-       Headers: { "Authorization": "Bearer <token>" }
-       Body :
+- Update Quiz :
+      - PUT /api/quizzes/:id
+      - Headers: { "Authorization": "Bearer <token>" }
+      - Body :
        {
   "title": "Updated Math Quiz",
   "description": "Test your basic math skills with updated questions",
@@ -116,17 +116,37 @@ Update Quiz
   "totalMarks": 15
 }
 
-Delete Quiz 
-    DELETE /api/quizzes/:id
-    Headers: { "Authorization": "Bearer <token>" }
+- Delete Quiz :
+   - DELETE /api/quizzes/:id
+   - Headers: { "Authorization": "Bearer <token>" }
 
 
-    Submissions
-Submit Quiz
-   POST /api/quizzes/:id/submit
-   Headers: { "Authorization": "Bearer <token>" }
-Body : 
+## Submissions
+ - Submit Quiz:
+  - POST /api/quizzes/:id/submit
+  - Headers: { "Authorization": "Bearer <token>" }
+  - Body : 
 {
   "answers": ["4", "15"]
 }
+-Response : {
+  "score": 15,
+  "totalMarks": 15,
+  "feedback": [
+    {
+      "question": "What is 2 + 2?",
+      "correctAnswer": "4",
+      "userAnswer": "4",
+      "isCorrect": true
+    },
+    {
+      "question": "What is 5 * 3?",
+      "correctAnswer": "15",
+      "userAnswer": "15",
+      "isCorrect": true
+    }
+  ]
+}
+
+
 
