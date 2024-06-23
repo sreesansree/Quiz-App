@@ -34,7 +34,7 @@ This project is a RESTful API backend for an online quiz application. It allows 
 
 ## Installation
 1. Clone the repository:
-   git clone https://github.com/yourusername/quiz-app-backend.git
+   git clone https://github.com/sreesansree/Quiz-App.git
    cd quiz-app-backend
    
 2 . Install dependencies:
