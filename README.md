@@ -34,11 +34,11 @@ This project is a RESTful API backend for an online quiz application. It allows 
 
 ## Installation
 1. Clone the repository:
-   git clone https://github.com/sreesansree/Quiz-App.git
-   cd quiz-app-backend
+  - git clone https://github.com/sreesansree/Quiz-App.git
+  - cd quiz-app-backend
    
 2 . Install dependencies:
-     npm install
+  - npm install
      
 3. Create a .env file in the root directory and add the following environment variables:
     PORT=5000
@@ -53,10 +53,10 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
 
 API Endpoints  : 
 Authentication
-      Register : 
+     - Register : 
           POST /api/auth/register
           Body: { "username": "example", "password": "password" }
-      Login : 
+     - Login : 
          POST /api/auth/login
          Body: { "username": "example", "password": "password" }
   Quizzes : 
