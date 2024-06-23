@@ -9,7 +9,6 @@ This project is a RESTful API backend for an online quiz application. It allows 
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Database Schema](#database-schema)
 - [Authentication](#authentication)
 - [Business Logic](#business-logic)
 
