@@ -41,29 +41,29 @@ This project is a RESTful API backend for an online quiz application. It allows 
   - npm install
      
 3. Create a .env file in the root directory and add the following environment variables:
-    PORT=5000
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
+   - PORT=5000
+   - MONGO_URI=your_mongodb_connection_string
+   - JWT_SECRET=your_jwt_secret
    
 4.Start the server:
-   npm run dev
+  - npm run dev
 
-Usage : 
+## Usage 
 You can use Postman or Insomnia to test the API endpoints. Below are the available endpoints and their usage.
 
 API Endpoints  : 
-Authentication
-     - Register : 
-          POST /api/auth/register
-          Body: { "username": "example", "password": "password" }
-     - Login : 
-         POST /api/auth/login
-         Body: { "username": "example", "password": "password" }
+Authentication :
+      Register : 
+         - POST /api/auth/register
+          - Body: { "username": "example", "password": "password" }
+      Login : 
+       - POST /api/auth/login
+       - Body: { "username": "example", "password": "password" }
   Quizzes : 
-  Create Quiz :
-       POST /api/quizzes
-       Headers: { "Authorization": "Bearer <token>" }
-       Body :
+     Create Quiz :
+       - POST /api/quizzes
+       - Headers: { "Authorization": "Bearer <token>" }
+       -  Body :
        {
   "title": "Math Quiz",
   "description": "Test your basic math skills",
