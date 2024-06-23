@@ -141,10 +141,10 @@ You can use Postman or Insomnia to test the API endpoints. Below are the availab
      ] 
     }
 
-##Authentication 
+## Authentication 
 The API uses JWT for authentication. Users need to register and log in to receive a token. This token must be included in the Authorization header for all protected routes.
 
-##Business Logic
+## Business Logic
 The business logic for calculating quiz scores and providing feedback is implemented in the submitQuiz controller.
 
 
